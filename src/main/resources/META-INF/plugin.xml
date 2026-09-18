@@ -1,0 +1,53 @@
+<idea-plugin>
+    <id>com.scifi.progress</id>
+    <name>科幻风进度条</name>
+    <vendor>Sci-Fi Style</vendor>
+    <version>2.0.0</version>
+
+    <idea-version since-build="211.0"/>
+
+    <description><![CDATA[
+        <h3>科幻风进度条 — Sci-Fi Style Progress Bar for JetBrains IDEs</h3>
+        <p>A lightweight, vector-drawn progress bar skin for IntelliJ IDEA, PyCharm and all JetBrains IDEs.</p>
+        <ul>
+            <li><b>Determinate mode:</b> rounded track with a sci-fi blue to code-green gradient fill (#2563EB → #10B981),
+                a mini robot icon slides with the progress and a small check-mark animation pops at 100%.</li>
+            <li><b>Indeterminate mode:</b> the robot slides back and forth while a small marquee text scrolls below
+                (default text: "正在读取").</li>
+            <li>Pure Graphics2D vector rendering — no GIFs, no external assets, low CPU usage.</li>
+            <li>Instant skinning for the status-bar inline progress bar and all short-lived progress bars.</li>
+            <li>Works with New UI and all official light / dark themes including Darcula.</li>
+        </ul>
+        <p>Configure at: <b>Settings / Preferences → Appearance &amp; Behavior → 科幻风进度条</b></p>
+        <p>Customizable: gradient colors, scrolling text, animation speed, on/off switch.
+            The head icon is always the mini robot.</p>
+        <hr>
+        <h3>科幻风进度条（中文说明）</h3>
+        <ul>
+            <li><b>determinate（确定进度）</b>：浅灰圆角轨道 + 科幻蓝→代码绿渐变填充（#2563EB → #10B981），
+                迷你机器人头像随进度向右移动，到达 100% 弹出微小对勾动画。</li>
+            <li><b>indeterminate（无限加载）</b>：机器人左右往复滑行，底部小字滚动（默认「正在读取」）。</li>
+            <li>完全矢量绘制（Graphics2D），不依赖任何 GIF / 外部动图资源，低性能占用。</li>
+            <li>状态栏内联进度条等短暂存活的进度条也会即时换肤（AWT 组件监听，无需等待扫描）。</li>
+            <li>兼容 New UI、Darcula 亮色 / 深色全部官方主题。</li>
+        </ul>
+        <p>设置入口：<b>Settings / Preferences → Appearance &amp; Behavior → 科幻风进度条</b></p>
+        <p>可自定义：渐变起止色、滚动提示文案、动画速度、显示 / 隐藏；头部图标固定为机器人。</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService
+                serviceImplementation="com.scifi.progress.settings.SciFiSettingsState"/>
+        <applicationConfigurable
+                instance="com.scifi.progress.settings.SciFiSettingsConfigurable"
+                id="com.scifi.progress.settings"
+                displayName="科幻风进度条"/>
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.scifi.progress.SciFiLifecycleListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+</idea-plugin>
