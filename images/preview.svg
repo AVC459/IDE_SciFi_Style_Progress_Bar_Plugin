@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 236" width="760" height="236" role="img" aria-label="科幻风进度条 三种状态预览">
+  <defs>
+    <linearGradient id="g640" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="g280" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="280" y2="0">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <clipPath id="track640"><rect x="0" y="-3.5" width="640" height="7" rx="3.5"/></clipPath>
+    <clipPath id="track280"><rect x="0" y="-3.5" width="280" height="7" rx="3.5"/></clipPath>
+    <clipPath id="marqueeClip"><rect x="0" y="-10" width="280" height="14"/></clipPath>
+  </defs>
+
+  <rect width="760" height="236" rx="14" fill="#2B2D30"/>
+  <rect x="0.5" y="0.5" width="759" height="235" rx="13.5" fill="none" stroke="#393B40"/>
+
+  <!-- ============ 1. determinate · 62% ============ -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#9AA0A6">
+    <text x="56" y="30">determinate · 确定进度 62%</text>
+  </g>
+  <g transform="translate(56, 40)">
+    <g transform="translate(0, 7)">
+      <rect x="0" y="-3.5" width="640" height="7" rx="3.5" fill="#3C3F41"/>
+      <g clip-path="url(#track640)">
+        <rect x="0" y="-3.5" width="396.8" height="7" fill="url(#g640)"/>
+        <rect x="0" y="-3.5" width="396.8" height="3.15" fill="#FFFFFF" opacity="0.216"/>
+      </g>
+    </g>
+    <!-- 头部机器人：cx = 进度前端，cy = 轨道中心 -->
+    <g transform="translate(396.8, 7)">
+      <ellipse cx="0" cy="4.2" rx="4.5" ry="1.1" fill="#000000" opacity="0.176"/>
+      <path d="M0 -6.6V-9.2" stroke="#333842" stroke-width="0.9" stroke-linecap="round"/>
+      <circle cx="0" cy="-9.3" r="1.3" fill="#333842"/>
+      <rect x="-5.2" y="-6.8" width="10.4" height="7.6" rx="2.6" fill="#FFFFFF" stroke="#333842" stroke-width="0.9"/>
+      <rect x="-4" y="-5.2" width="2.2" height="2.4" rx="1" fill="#1F2937"/>
+      <rect x="1.8" y="-5.2" width="2.2" height="2.4" rx="1" fill="#1F2937"/>
+      <path d="M-1.8 -0.3A1.8 1.1 0 0 1 1.8 -0.3" fill="none" stroke="#333842" stroke-width="0.7" stroke-linecap="round"/>
+      <rect x="-3.8" y="0.4" width="7.6" height="5" rx="1.8" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+      <rect x="-3.2" y="2.2" width="6.4" height="1.5" rx="0.8" fill="#10B981"/>
+      <rect x="-5.8" y="0.6" width="1.9" height="3.6" rx="0.9" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+      <rect x="3.9" y="0.6" width="1.9" height="3.6" rx="0.9" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+    </g>
+  </g>
+
+  <!-- ============ 2. determinate · 100% ============ -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#9AA0A6">
+    <text x="56" y="102">determinate · 100% 弹对勾</text>
+  </g>
+  <g transform="translate(56, 112)">
+    <g transform="translate(0, 7)">
+      <rect x="0" y="-3.5" width="640" height="7" rx="3.5" fill="#3C3F41"/>
+      <g clip-path="url(#track640)">
+        <rect x="0" y="-3.5" width="640" height="7" fill="url(#g640)"/>
+        <rect x="0" y="-3.5" width="640" height="3.15" fill="#FFFFFF" opacity="0.216"/>
+      </g>
+    </g>
+    <!-- 100% 时头部位被白色圆底 + 绿对勾替换 -->
+    <g transform="translate(631, 7)">
+      <circle cx="0" cy="0" r="7" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="#000000" stroke-opacity="0.176" stroke-width="0.8"/>
+      <path d="M-2.38 0L-0.51 2.04L2.89 -2.04" fill="none" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- ============ 3. indeterminate · 无限加载 ============ -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#9AA0A6">
+    <text x="56" y="174">indeterminate · 无限加载（底部跑马灯）</text>
+  </g>
+  <g transform="translate(56, 184)">
+    <g transform="translate(0, 6)">
+      <rect x="0" y="-3.5" width="280" height="7" rx="3.5" fill="#3C3F41"/>
+      <g clip-path="url(#track280)">
+        <rect x="120.96" y="-3.5" width="78.4" height="7" fill="url(#g280)"/>
+        <rect x="120.96" y="-3.5" width="78.4" height="3.15" fill="#FFFFFF" opacity="0.216"/>
+      </g>
+    </g>
+    <!-- 机器人骑在滑动段前缘，伴随 sin 上下浮动 -->
+    <g transform="translate(199.36, 5.53)">
+      <ellipse cx="0" cy="4.2" rx="4.5" ry="1.1" fill="#000000" opacity="0.176"/>
+      <path d="M0 -6.6V-9.2" stroke="#333842" stroke-width="0.9" stroke-linecap="round"/>
+      <circle cx="0" cy="-9.3" r="1.3" fill="#333842"/>
+      <rect x="-5.2" y="-6.8" width="10.4" height="7.6" rx="2.6" fill="#FFFFFF" stroke="#333842" stroke-width="0.9"/>
+      <rect x="-4" y="-5.2" width="2.2" height="2.4" rx="1" fill="#1F2937"/>
+      <rect x="1.8" y="-5.2" width="2.2" height="2.4" rx="1" fill="#1F2937"/>
+      <path d="M-1.8 -0.3A1.8 1.1 0 0 1 1.8 -0.3" fill="none" stroke="#333842" stroke-width="0.7" stroke-linecap="round"/>
+      <rect x="-3.8" y="0.4" width="7.6" height="5" rx="1.8" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+      <rect x="-3.2" y="2.2" width="6.4" height="1.5" rx="0.8" fill="#10B981"/>
+      <rect x="-5.8" y="0.6" width="1.9" height="3.6" rx="0.9" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+      <rect x="3.9" y="0.6" width="1.9" height="3.6" rx="0.9" fill="#FFFFFF" stroke="#333842" stroke-width="0.7"/>
+    </g>
+    <g transform="translate(0, 19.5)">
+      <g clip-path="url(#marqueeClip)" fill="#8A8A8A" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+        <text x="-72" y="0">正在读取</text>
+        <text x="0" y="0">正在读取</text>
+        <text x="72" y="0">正在读取</text>
+        <text x="144" y="0">正在读取</text>
+        <text x="216" y="0">正在读取</text>
+      </g>
+    </g>
+  </g>
+</svg>
