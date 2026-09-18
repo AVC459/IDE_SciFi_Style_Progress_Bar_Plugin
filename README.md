@@ -232,6 +232,17 @@ Windows 用 `gradlew.bat`。构建要点：
 
 如果这个小插件让你每天舒服了一点，给个 ⭐ 就是最好的支持。
 
+## 赞赏
+
+这个插件不联网、不带广告、也不打算收费。如果它让你每天那几秒的等待舒服了一点，可以请我喝杯咖啡 —— 完全随意，不请也照样用，功能一个不少。
+
+<table align="center">
+  <tr>
+    <td align="center" width="240"><img src="images/alipay-qr.jpg" width="200" alt="支付宝收款码"><br><b>支付宝</b></td>
+    <td align="center" width="240"><img src="images/wechat-qr.png" width="200" alt="微信收款码"><br><b>微信</b></td>
+  </tr>
+</table>
+
 ## License
 
 [MIT](LICENSE)

@@ -228,6 +228,17 @@ Found a bug or want a feature? Open an [Issue](../../issues). Before sending cod
 
 If this little plugin makes your day slightly nicer, a ⭐ is the best support.
 
+## Support
+
+This plugin makes no network calls, ships no ads, and is not going to be paid-only. If it makes those few seconds of waiting a little nicer, you are welcome to buy me a coffee — entirely optional, and nothing is locked behind it.
+
+<table align="center">
+  <tr>
+    <td align="center" width="240"><img src="images/alipay-qr.jpg" width="200" alt="Alipay QR code"><br><b>Alipay</b></td>
+    <td align="center" width="240"><img src="images/wechat-qr.png" width="200" alt="WeChat QR code"><br><b>WeChat</b></td>
+  </tr>
+</table>
+
 ## License
 
 [MIT](LICENSE)
